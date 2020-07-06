@@ -11,11 +11,10 @@
     $scope.message = "";
     $scope.CheckIfTooMuch = function () {
       var numberOfItems = countCommaSeperatedItems($scope.items);
-      if ($scope.message == "") {
+      // console.log("click => ", $scope.items, numberOfItems);
+      if (numberOfItems <= 0) {
         $scope.message = "Please enter data first";
-      }
-
-      if (numberOfItems > 3) {
+      } else if (numberOfItems > 3) {
         $scope.message = "Too much";
       } else if (numberOfItems > 0 && numberOfItems <= 3) {
         $scope.message = "Enjoy";

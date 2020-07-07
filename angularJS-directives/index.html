@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app-main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AngularJS</title>
+    <script src="/js/angular.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+  <body style="text-align: center;" ng-controller="ctlr-main">
+    <h1>
+      Hello, World!
+      <span ng-click="refreshData()" style="float: right; cursor: pointer;"
+        >&#8634;</span
+      >
+    </h1>
+    <hr />
+    <div>
+      <!-- <div my-profile></div> -->
+      <my-profile></my-profile><br />
+      <my-placeholder></my-placeholder>
+    </div>
+  </body>
+</html>

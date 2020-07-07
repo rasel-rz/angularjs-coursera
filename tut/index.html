@@ -11,7 +11,7 @@
     <h1>Hello, World!</h1>
     <div ng-controller="ctlr-main">
       <input type="text" ng-model="name" ng-keyup="displayNumericValue()" />
-      Numeric Value: {{numericValue}}
+      Numeric Value: {{numericValue | custom}}
     </div>
   </body>
 </html>

@@ -1,0 +1,11 @@
+<div ng-hide="!apiData" style="text-align: left;">
+  <div style="text-align: center;">
+    <input type="text" ng-model="search.body" />
+  </div>
+  <hr />
+  <div ng-repeat="data in apiData | filter: search">
+    {{$index + 1}}. <strong>{{data.title}} : </strong> {{data.body}}
+    <hr />
+  </div>
+</div>
+<div ng-hide="apiData">Loading</div>
